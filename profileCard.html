@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+    }
+    .card{
+        background-color: rgb(65, 65, 65);
+        width: 400px;
+        height: 500px;
+        margin: 100px auto 10px;
+        border-radius: 40px;
+        box-shadow: 0 20px 0 20px rgb(46, 43, 43) inset, 0 20px 0 20px,
+                    0 20px 0 20px rgb(81, 71, 71) inset, 0 20px 0 20px,;
+    }
+    .face{
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+    }
+    #name{
+        color: white;
+        margin-left: 20px;
+        height: 70px;
+        font-size: 18px;
+    }
+    #age{
+        font-weight: 700;
+    }
+    .description{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    .description-info{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+    #occupation{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info{
+        margin: 0 28px 0 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .intro{
+        color: whitesmoke;
+        padding-left: 15px;
+    }
+    .latin{
+        color: black;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+    .meaning{
+        color: rgb(196, 196, 196);
+        font-size: 12px;
+    }
+    a{
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+    }
+    .contact{
+        margin: 10px 30px 10px 30px;
+        padding: 5px 0 0 50px;
+    }
+    .contact-info{
+        margin: 0;
+        padding: 0 0 10px 0;
+        color: rgb(202, 202, 202);
+        text-decoration: underline;
+    }
+    .contact-detail{
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .divider{
+        margin-top: 4px;
+        margin-left: 10px;
+        width: 375px;
+        color: azure;
+        border: 2px solid rgb(255, 255, 255);
+    }.divider-2{
+        margin-top: 0;
+        margin-left: 10px;
+        width: 375px;
+        color: azure;
+        border: 2px solid rgb(255, 255, 255);
+    }
+    @media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .card{
+    width: 380px;
+    height: 400px;
+  }
+}
+</style>
+<body>
+    <div class="card">
+        <div class="front">
+            <div class="face">
+                <span id="name"><h2>Muhammad Mutahir</h2></span>
+                <span id="image"><img src="profile pic.jpeg" style="height:170px; border-radius: 35px;" alt="Profile picture loading"></span>
+            </div>
+            <div class="description">
+                <p class="description-info"><span id="occupation">Future Software Engineer</span><span id="age">18</span></p>
+                <p class="description-info latin"><span>Dum spiro, spero</span></p>
+                <i class="description-info meaning">While I breathe, I hope.</i>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="info">
+            <p class="intro">A student currently learning Javascript and hating calculus more everyday.<a href="https://github.com/mutahir-muhammad">Take a look at my work.</a></p>
+            <p class="intro">I love to write and experience the wonders of the complex human mind via social interactions.</p>
+        </div>
+        <div class="divider-2"></div>
+        <div class="contact">
+            <p class="contact-info">Github:<span class="contact-detail"><a href="https://github.com/mutahir-muhammad"> mutahir-muhammad</a></span></p>
+            <p class="contact-info">Email:<span class="contact-detail"> mutahir.khan44@ahoo.com</span></p>
+            <p class="contact-info">Phone No.<span class="contact-detail">+92 331-4234797</span></p>
+        </div>
+    </div>
+</body>
+</html>
